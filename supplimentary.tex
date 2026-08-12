@@ -1,0 +1,351 @@
+\section*{Supplementary Material}
+
+\subsection*{Table S1: Per-Project PROMISE Breakdown (All 7 Models)}
+
+For each of the seven PROMISE projects, Table~S1 reports mean AUC and F1
+($\pm$ standard deviation over three seeds) under random split, temporal
+(cross-version) split, and walk-forward evaluation (mean over expanding-window
+folds, single seed). Models: LR = Logistic Regression, RF = Random Forest,
+XGB = XGBoost, LGB = LightGBM, MLP = SimpleMLP, Res = ResidualMLP,
+FTT = FT-Transformer.
+
+
+\begin{table}[htbp]
+\centering
+\caption{PROMISE -- Ant: AUC and F1 under random, temporal, and walk-forward evaluation (mean~$\pm$~SD over 3 seeds for random/temporal; mean over folds for walk-forward).}
+\label{tab:supp-ant}
+\scriptsize
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{Random} & \multicolumn{2}{c}{Temporal} & \multicolumn{2}{c}{Walk-forward} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+LR & 0.803$\pm$0.038 & 0.558$\pm$0.028 & 0.798$\pm$0.000 & 0.547$\pm$0.000 & 0.713$\pm$0.133 & 0.448$\pm$0.137 \\
+RF & 0.779$\pm$0.023 & 0.418$\pm$0.032 & 0.778$\pm$0.002 & 0.428$\pm$0.006 & 0.706$\pm$0.077 & 0.270$\pm$0.104 \\
+XGB & 0.755$\pm$0.024 & 0.405$\pm$0.072 & 0.753$\pm$0.006 & 0.451$\pm$0.021 & 0.668$\pm$0.096 & 0.313$\pm$0.111 \\
+LGB & 0.742$\pm$0.005 & 0.424$\pm$0.020 & 0.754$\pm$0.002 & 0.466$\pm$0.013 & 0.681$\pm$0.098 & 0.304$\pm$0.102 \\
+MLP & 0.771$\pm$0.023 & 0.378$\pm$0.039 & 0.750$\pm$0.002 & 0.413$\pm$0.005 & 0.715$\pm$0.119 & 0.431$\pm$0.145 \\
+Res & 0.768$\pm$0.026 & 0.432$\pm$0.009 & 0.723$\pm$0.016 & 0.408$\pm$0.043 & 0.728$\pm$0.123 & 0.306$\pm$0.092 \\
+FTT & 0.798$\pm$0.044 & 0.480$\pm$0.042 & 0.798$\pm$0.002 & 0.501$\pm$0.075 & 0.725$\pm$0.094 & 0.202$\pm$0.180 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{PROMISE -- Camel: AUC and F1 under random, temporal, and walk-forward evaluation (mean~$\pm$~SD over 3 seeds for random/temporal; mean over folds for walk-forward).}
+\label{tab:supp-camel}
+\scriptsize
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{Random} & \multicolumn{2}{c}{Temporal} & \multicolumn{2}{c}{Walk-forward} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+LR & 0.699$\pm$0.013 & 0.427$\pm$0.027 & 0.633$\pm$0.000 & 0.362$\pm$0.000 & 0.612$\pm$0.062 & 0.340$\pm$0.038 \\
+RF & 0.769$\pm$0.017 & 0.385$\pm$0.052 & 0.714$\pm$0.002 & 0.350$\pm$0.006 & 0.674$\pm$0.109 & 0.265$\pm$0.209 \\
+XGB & 0.768$\pm$0.019 & 0.429$\pm$0.007 & 0.727$\pm$0.005 & 0.389$\pm$0.012 & 0.674$\pm$0.114 & 0.286$\pm$0.211 \\
+LGB & 0.764$\pm$0.021 & 0.422$\pm$0.050 & 0.727$\pm$0.003 & 0.385$\pm$0.014 & 0.670$\pm$0.104 & 0.288$\pm$0.207 \\
+MLP & 0.747$\pm$0.013 & 0.302$\pm$0.090 & 0.693$\pm$0.010 & 0.299$\pm$0.048 & 0.632$\pm$0.093 & 0.337$\pm$0.071 \\
+Res & 0.738$\pm$0.032 & 0.384$\pm$0.021 & 0.707$\pm$0.011 & 0.353$\pm$0.022 & 0.631$\pm$0.113 & 0.154$\pm$0.116 \\
+FTT & 0.684$\pm$0.034 & 0.249$\pm$0.030 & 0.633$\pm$0.007 & 0.289$\pm$0.046 & 0.626$\pm$0.061 & 0.179$\pm$0.159 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{PROMISE -- Ivy: AUC and F1 under random, temporal, and walk-forward evaluation (mean~$\pm$~SD over 3 seeds for random/temporal; mean over folds for walk-forward).}
+\label{tab:supp-ivy}
+\scriptsize
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{Random} & \multicolumn{2}{c}{Temporal} & \multicolumn{2}{c}{Walk-forward} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+LR & 0.758$\pm$0.049 & 0.429$\pm$0.025 & 0.683$\pm$0.000 & 0.294$\pm$0.000 & 0.706$\pm$0.033 & 0.258$\pm$0.051 \\
+RF & 0.788$\pm$0.027 & 0.173$\pm$0.097 & 0.779$\pm$0.010 & 0.265$\pm$0.079 & 0.760$\pm$0.017 & 0.270$\pm$0.120 \\
+XGB & 0.740$\pm$0.011 & 0.320$\pm$0.037 & 0.720$\pm$0.021 & 0.324$\pm$0.026 & 0.715$\pm$0.015 & 0.236$\pm$0.099 \\
+LGB & 0.764$\pm$0.025 & 0.191$\pm$0.039 & 0.732$\pm$0.005 & 0.283$\pm$0.009 & 0.737$\pm$0.002 & 0.240$\pm$0.060 \\
+MLP & 0.747$\pm$0.026 & 0.353$\pm$0.054 & 0.709$\pm$0.020 & 0.329$\pm$0.028 & 0.769$\pm$0.025 & 0.305$\pm$0.094 \\
+Res & 0.722$\pm$0.067 & 0.285$\pm$0.057 & 0.639$\pm$0.057 & 0.263$\pm$0.063 & 0.764$\pm$0.059 & 0.245$\pm$0.023 \\
+FTT & 0.765$\pm$0.028 & 0.195$\pm$0.094 & 0.790$\pm$0.022 & 0.314$\pm$0.097 & 0.742$\pm$0.002 & 0.247$\pm$0.065 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{PROMISE -- jEdit: AUC and F1 under random, temporal, and walk-forward evaluation (mean~$\pm$~SD over 3 seeds for random/temporal; mean over folds for walk-forward).}
+\label{tab:supp-jedit}
+\scriptsize
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{Random} & \multicolumn{2}{c}{Temporal} & \multicolumn{2}{c}{Walk-forward} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+LR & 0.792$\pm$0.026 & 0.467$\pm$0.033 & 0.657$\pm$0.000 & 0.076$\pm$0.000 & 0.785$\pm$0.090 & 0.418$\pm$0.239 \\
+RF & 0.826$\pm$0.025 & 0.415$\pm$0.035 & 0.798$\pm$0.013 & 0.132$\pm$0.006 & 0.839$\pm$0.023 & 0.462$\pm$0.223 \\
+XGB & 0.812$\pm$0.020 & 0.467$\pm$0.078 & 0.879$\pm$0.011 & 0.138$\pm$0.003 & 0.839$\pm$0.017 & 0.455$\pm$0.222 \\
+LGB & 0.801$\pm$0.033 & 0.413$\pm$0.040 & 0.861$\pm$0.006 & 0.138$\pm$0.002 & 0.845$\pm$0.021 & 0.459$\pm$0.220 \\
+MLP & 0.822$\pm$0.033 & 0.414$\pm$0.025 & 0.743$\pm$0.031 & 0.126$\pm$0.016 & 0.786$\pm$0.082 & 0.410$\pm$0.223 \\
+Res & 0.795$\pm$0.005 & 0.402$\pm$0.057 & 0.707$\pm$0.027 & 0.099$\pm$0.005 & 0.770$\pm$0.077 & 0.405$\pm$0.184 \\
+FTT & 0.801$\pm$0.017 & 0.409$\pm$0.001 & 0.669$\pm$0.053 & 0.129$\pm$0.003 & 0.773$\pm$0.085 & 0.443$\pm$0.213 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{PROMISE -- Lucene: AUC and F1 under random, temporal, and walk-forward evaluation (mean~$\pm$~SD over 3 seeds for random/temporal; mean over folds for walk-forward).}
+\label{tab:supp-lucene}
+\scriptsize
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{Random} & \multicolumn{2}{c}{Temporal} & \multicolumn{2}{c}{Walk-forward} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+LR & 0.754$\pm$0.013 & 0.651$\pm$0.017 & 0.708$\pm$0.000 & 0.644$\pm$0.000 & 0.677$\pm$0.044 & 0.629$\pm$0.022 \\
+RF & 0.713$\pm$0.020 & 0.686$\pm$0.033 & 0.643$\pm$0.003 & 0.659$\pm$0.004 & 0.649$\pm$0.006 & 0.643$\pm$0.019 \\
+XGB & 0.712$\pm$0.031 & 0.673$\pm$0.043 & 0.629$\pm$0.003 & 0.635$\pm$0.016 & 0.635$\pm$0.005 & 0.628$\pm$0.034 \\
+LGB & 0.716$\pm$0.027 & 0.681$\pm$0.030 & 0.630$\pm$0.003 & 0.662$\pm$0.010 & 0.632$\pm$0.003 & 0.630$\pm$0.042 \\
+MLP & 0.735$\pm$0.029 & 0.714$\pm$0.020 & 0.673$\pm$0.007 & 0.657$\pm$0.002 & 0.696$\pm$0.067 & 0.604$\pm$0.180 \\
+Res & 0.703$\pm$0.035 & 0.670$\pm$0.020 & 0.653$\pm$0.019 & 0.625$\pm$0.043 & 0.675$\pm$0.033 & 0.577$\pm$0.083 \\
+FTT & 0.759$\pm$0.008 & 0.709$\pm$0.030 & 0.743$\pm$0.013 & 0.728$\pm$0.061 & 0.692$\pm$0.076 & 0.702$\pm$0.080 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{PROMISE -- POI: AUC and F1 under random, temporal, and walk-forward evaluation (mean~$\pm$~SD over 3 seeds for random/temporal; mean over folds for walk-forward).}
+\label{tab:supp-poi}
+\scriptsize
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{Random} & \multicolumn{2}{c}{Temporal} & \multicolumn{2}{c}{Walk-forward} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+LR & 0.689$\pm$0.019 & 0.659$\pm$0.019 & 0.681$\pm$0.000 & 0.748$\pm$0.000 & 0.622$\pm$0.112 & 0.511$\pm$0.300 \\
+RF & 0.659$\pm$0.005 & 0.599$\pm$0.016 & 0.707$\pm$0.007 & 0.685$\pm$0.027 & 0.597$\pm$0.097 & 0.387$\pm$0.233 \\
+XGB & 0.676$\pm$0.016 & 0.593$\pm$0.015 & 0.695$\pm$0.004 & 0.592$\pm$0.021 & 0.599$\pm$0.095 & 0.348$\pm$0.219 \\
+LGB & 0.677$\pm$0.015 & 0.585$\pm$0.019 & 0.704$\pm$0.002 & 0.580$\pm$0.008 & 0.611$\pm$0.087 & 0.325$\pm$0.213 \\
+MLP & 0.720$\pm$0.034 & 0.682$\pm$0.009 & 0.658$\pm$0.004 & 0.630$\pm$0.072 & 0.658$\pm$0.124 & 0.397$\pm$0.231 \\
+Res & 0.730$\pm$0.021 & 0.695$\pm$0.007 & 0.648$\pm$0.007 & 0.602$\pm$0.076 & 0.663$\pm$0.127 & 0.280$\pm$0.267 \\
+FTT & 0.739$\pm$0.017 & 0.699$\pm$0.019 & 0.754$\pm$0.038 & 0.780$\pm$0.018 & 0.642$\pm$0.112 & 0.397$\pm$0.337 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{PROMISE -- Velocity: AUC and F1 under random, temporal, and walk-forward evaluation (mean~$\pm$~SD over 3 seeds for random/temporal; mean over folds for walk-forward).}
+\label{tab:supp-velocity}
+\scriptsize
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{Random} & \multicolumn{2}{c}{Temporal} & \multicolumn{2}{c}{Walk-forward} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+LR & 0.654$\pm$0.028 & 0.601$\pm$0.033 & 0.725$\pm$0.000 & 0.599$\pm$0.000 & 0.563$\pm$0.229 & 0.669$\pm$0.099 \\
+RF & 0.710$\pm$0.025 & 0.695$\pm$0.014 & 0.610$\pm$0.008 & 0.587$\pm$0.003 & 0.509$\pm$0.131 & 0.689$\pm$0.140 \\
+XGB & 0.717$\pm$0.027 & 0.697$\pm$0.023 & 0.633$\pm$0.005 & 0.582$\pm$0.003 & 0.578$\pm$0.088 & 0.686$\pm$0.146 \\
+LGB & 0.722$\pm$0.033 & 0.707$\pm$0.022 & 0.653$\pm$0.002 & 0.576$\pm$0.006 & 0.590$\pm$0.091 & 0.679$\pm$0.148 \\
+MLP & 0.682$\pm$0.023 & 0.682$\pm$0.026 & 0.695$\pm$0.016 & 0.546$\pm$0.010 & 0.505$\pm$0.203 & 0.597$\pm$0.086 \\
+Res & 0.672$\pm$0.011 & 0.667$\pm$0.012 & 0.696$\pm$0.016 & 0.539$\pm$0.012 & 0.575$\pm$0.143 & 0.651$\pm$0.162 \\
+FTT & 0.698$\pm$0.011 & 0.699$\pm$0.018 & 0.674$\pm$0.031 & 0.522$\pm$0.006 & 0.543$\pm$0.215 & 0.622$\pm$0.161 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Table S2: Full Seven-Model Walk-Forward Results}
+
+Table~S2 reports walk-forward AUC and F1 (mean over expanding-window folds)
+for all seven model families on ApacheJIT, city\_hour, and PROMISE (averaged
+across seven projects). This extends the three-model champion comparison in the
+main paper to the complete model set.
+
+\begin{table}[htbp]
+\centering
+\caption{Full seven-model walk-forward evaluation: mean AUC and F1 (mean over folds). PROMISE figures are averaged across seven projects.}
+\label{tab:supp-wf-full}
+\small
+\begin{tabular}{l cc cc cc}
+\toprule
+ & \multicolumn{2}{c}{ApacheJIT} & \multicolumn{2}{c}{city\_hour} & \multicolumn{2}{c}{PROMISE (avg)} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Model & AUC & F1 & AUC & F1 & AUC & F1 \\
+\midrule
+Logistic Regression & 0.752 & 0.515 & 0.745 & 0.553 & 0.679 & 0.456 \\
+Random Forest & 0.740 & 0.354 & 0.795 & 0.606 & 0.692 & 0.404 \\
+XGBoost & 0.773 & 0.359 & 0.785 & 0.594 & 0.685 & 0.404 \\
+LightGBM & 0.796 & 0.362 & 0.787 & 0.594 & 0.693 & 0.399 \\
+SimpleMLP & 0.758 & 0.389 & 0.760 & 0.564 & 0.691 & 0.429 \\
+ResidualMLP & 0.720 & 0.356 & 0.761 & 0.580 & 0.695 & 0.354 \\
+FT-Transformer & 0.692 & 0.357 & 0.772 & 0.585 & 0.688 & 0.372 \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Walk-forward uses expanding-window folds (single seed). PROMISE averaged over Ant, Camel, Ivy, jEdit, Lucene, POI, Velocity.}
+\end{tabular}
+\end{table}
+
+
+\section{Full Hyperparameter Configurations and Implementation Details}
+
+This appendix provides complete specifications enabling reproduction of all experiments.
+
+\subsection{Non-Neural Models (scikit-learn 1.3.0)}
+
+\subsubsection{Logistic Regression}
+\texttt{sklearn.linear\_model.LogisticRegression(C=1.0, solver='lbfgs', max\_iter=1000, class\_weight='balanced', random\_state=seed)}
+
+\subsubsection{Random Forest}
+\texttt{sklearn.ensemble.RandomForestClassifier(n\_estimators=300, max\_depth=None, min\_samples\_split=2, min\_samples\_leaf=1, max\_features='sqrt', class\_weight='balanced', bootstrap=True, random\_state=seed)}
+
+\subsubsection{XGBoost}
+\texttt{xgboost.XGBClassifier(max\_depth=6, learning\_rate=0.1, n\_estimators=300, subsample=0.8, colsample\_bytree=0.8, random\_state=seed, use\_label\_encoder=False, eval\_metric='logloss')}
+
+\subsubsection{LightGBM}
+\texttt{lightgbm.LGBMClassifier(num\_leaves=31, learning\_rate=0.05, n\_estimators=300, subsample=0.8, colsample\_bytree=0.8, random\_state=seed)}
+
+\subsection{Deep Learning Models (PyTorch 2.0)}
+
+All deep models share the following training procedure:
+
+\textbf{Optimizer:} \texttt{torch.optim.Adam(learning\_rate=0.001, betas=(0.9, 0.999), eps=1e-8)}
+
+\textbf{Loss:} \texttt{torch.nn.BCEWithLogitsLoss()} for binary classification
+
+\textbf{Batch size:} 64
+
+\textbf{Validation:} 10\% of training set; early stopping with patience=20 epochs if validation loss does not improve
+
+\textbf{Epochs:} 20 for large datasets (ApacheJIT, city\_hour); 10 for small datasets (PROMISE)
+
+\textbf{Feature preprocessing:} StandardScaler(). Fitted on training set, applied to test set.
+
+\textbf{Device:} NVIDIA GPU (CUDA 12.0); fallback to CPU if unavailable.
+
+\subsubsection{Simple MLP}
+\begin{verbatim}
+class SimpleMLP(nn.Module):
+    def __init__(self, input_dim):
+        super().__init__()
+        self.fc1 = nn.Linear(input_dim, 128)
+        self.dropout1 = nn.Dropout(0.2)
+        self.fc2 = nn.Linear(128, 64)
+        self.dropout2 = nn.Dropout(0.2)
+        self.fc3 = nn.Linear(64, 32)
+        self.dropout3 = nn.Dropout(0.2)
+        self.fc_out = nn.Linear(32, 1)
+        
+    def forward(self, x):
+        x = F.relu(self.fc1(x))
+        x = self.dropout1(x)
+        x = F.relu(self.fc2(x))
+        x = self.dropout2(x)
+        x = F.relu(self.fc3(x))
+        x = self.dropout3(x)
+        x = self.fc_out(x)
+        return x
+\end{verbatim}
+
+\subsubsection{Residual MLP}
+\begin{verbatim}
+class ResidualMLP(nn.Module):
+    def __init__(self, input_dim):
+        super().__init__()
+        self.fc_in = nn.Linear(input_dim, 128)
+        self.residual_blocks = nn.ModuleList([
+            ResidualBlock(128) for _ in range(4)
+        ])
+        self.fc_out = nn.Linear(128, 1)
+        
+    def forward(self, x):
+        x = self.fc_in(x)
+        for block in self.residual_blocks:
+            x = block(x)
+        x = self.fc_out(x)
+        return x
+
+class ResidualBlock(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.fc = nn.Linear(dim, dim)
+        self.dropout = nn.Dropout(0.2)
+        
+    def forward(self, x):
+        return x + F.relu(self.dropout(self.fc(F.relu(x))))
+\end{verbatim}
+
+\subsubsection{FT-Transformer-Style Model}
+\begin{verbatim}
+class FTTransformer(nn.Module):
+    def __init__(self, input_dim, embed_dim=64, num_heads=8, num_layers=4):
+        super().__init__()
+        self.embed = nn.Linear(input_dim, embed_dim)
+        encoder_layer = nn.TransformerEncoderLayer(
+            d_model=embed_dim, nhead=num_heads, dim_feedforward=256,
+            batch_first=True, dropout=0.2
+        )
+        self.transformer = nn.TransformerEncoder(encoder_layer, num_layers=num_layers)
+        self.fc = nn.Sequential(
+            nn.Linear(embed_dim, 64),
+            nn.ReLU(),
+            nn.Linear(64, 1)
+        )
+        
+    def forward(self, x):
+        x = self.embed(x).unsqueeze(1)  # (batch, 1, embed_dim)
+        x = self.transformer(x)
+        x = x.mean(dim=1)  # global average pooling
+        x = self.fc(x)
+        return x
+\end{verbatim}
+
+\subsection{Data Preprocessing}
+
+\textbf{Missing values:} Column-wise mean imputation. For each feature, missing entries are replaced with the mean computed on non-missing entries in the training set. Mean is fitted on training, applied identically to test.
+
+\textbf{Normalization (deep models only):} StandardScaler fit on training features (mean 0, std 1). Test features are transformed using training statistics to prevent leakage.
+
+\textbf{Class balance (stratified splits):} Both random and temporal splits use \texttt{StratifiedShuffleSplit} (random) or manual stratification (temporal) to preserve label proportions (e.g., 18.3\% defects on ApacheJIT) in train and test.
+
+\textbf{Thresholds:}
+\begin{itemize}
+\item ApacheJIT defect label: Commit is defective if linked to defect-fixing commit (binary: 0 or 1).
+\item city\_hour PM$_{2.5}$ label: Defective if PM$_{2.5}$ > 60 μg/m³ (India AQI standard for "poor" category).
+\item PROMISE defect label: Class is defective if defect count > 0 (binary: 0 or 1).
+\end{itemize}
+
+\subsection{Evaluation Metrics and Reporting}
+
+All models output binary predictions or probabilities. Metrics are computed as follows:
+
+\textbf{AUC:} Area under the receiver operating characteristic curve. Computed from predicted probabilities using \texttt{sklearn.metrics.roc\_auc\_score}.
+
+\textbf{F1-score:} Harmonic mean of precision and recall, computed at probability threshold 0.5. Computed using \texttt{sklearn.metrics.f1\_score}.
+
+\textbf{Accuracy:} Fraction of correct predictions (not reported in main tables but available in supplementary materials).
+
+\textbf{Reported values:} Mean and standard deviation (SD) over three random seeds. Example: "0.839±0.001" means mean 0.839, SD 0.001.
+
+\subsection{Computational Environment}
+
+\textbf{Hardware:} NVIDIA GPU (e.g., RTX 3080, A100) or CPU fallback.
+
+\textbf{Runtime per model:}
+\begin{itemize}
+\item Tree models: <1 minute per seed (ApacheJIT, city\_hour); <10 seconds (PROMISE).
+\item Deep models: 5--15 minutes per seed (ApacheJIT, city\_hour); <1 minute (PROMISE).
+\item Total for all models and seeds: ~8 GPU hours.
+\end{itemize}
+
+\textbf{Software versions:} Python 3.10, scikit-learn 1.3.0, xgboost 2.0.0, lightgbm 4.0.0, PyTorch 2.0, pandas 2.0, numpy 1.24.
+
+\end{document}
